@@ -16,8 +16,8 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="de" className={jakarta.variable}>
-      <body className="antialiased font-jakarta">{children}</body>
+    <html lang="de" className={`${jakarta.variable} h-full`}>
+      <body className="antialiased font-jakarta h-full overflow-hidden">{children}</body>
     </html>
   )
 }
